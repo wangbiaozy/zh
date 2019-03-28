@@ -1,0 +1,48 @@
+html,body{
+    background-color: #b7ea9d;
+    /* 首页 */
+    section.home{
+        >div{
+            position: relative;
+            width: 7.5rem;
+            &:nth-child(1){
+                height: 4.14rem;
+                background: url(../images/top_bg_01.png) center no-repeat;
+                background-size: cover;
+                a{
+                    position: absolute;
+                    top: .2rem;
+                    right: .2rem;
+                    width: 1.5rem;
+                    height: .58rem;
+                    background: url(../images/rule_btn.png) center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &:nth-child(2){
+                height: 2.74rem;
+                background: url(../images/top_bg_02.png) center no-repeat;
+                background-size: cover;
+                >div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 6.75rem;
+                    height: 4.53rem;
+                    background: url(../images/flower.png) center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &:nth-child(3){
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 5.06rem;
+                background: url(../images/bottom_bg.png) center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

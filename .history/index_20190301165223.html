@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/banner.png',
+            'images/bdsjh.png',
+            'images/bg_01.png',
+            'images/bg_02.png',
+            'images/btn_cj.png',
+            'images/btn_cjhd.png',
+            'images/btn_dhff.png',
+            'images/btn_dl.png',
+            'images/btn_fshy.png',
+            'images/btn_lj.png',
+            'images/btn_qd.png',
+            'images/btn_qdl.png',
+            'images/btn_qr.png',
+            'images/btn_qx.png',
+            'images/btn_xg.png',
+            'images/btn_zz.png',
+            'images/c1.png',
+            'images/c2.png',
+            'images/c3.png',
+            'images/c4.png',
+            'images/c5.png',
+            'images/card_1.png',
+            'images/card_2.png',
+            'images/card_3.png',
+            'images/card_4.png',
+            'images/card_5.png',
+            'images/card.png',
+            'images/close.png',
+            'images/default.jpg',
+            'images/erweima.png',
+            'images/fire.gif',
+            'images/fri_bg_01.png',
+            'images/fri_bg_02.png',
+            'images/fri_bg_03.png',
+            'images/gongxi.png',
+            'images/guang1.png',
+            'images/guang2.png',
+            'images/hdgz.png',
+            'images/home_bg_01.png',
+            'images/home_bg_02.png',
+            'images/home_bg_03.png',
+            'images/hyzl.png',
+            'images/longjiao.png',
+            'images/longshen.png',
+            'images/longtou.png',
+            'images/longwei.png',
+            'images/longzhu.png',
+            'images/longzhua.png',
+            'images/rule_btn.png',
+            'images/share.png',
+            'images/sjhm.png',
+            'images/start_btn.png',
+            'images/submit.png',
+            'images/tc_1_text.png',
+            'images/tc_bg.png',
+            'images/tc_card.png',
+            'images/tc_title_1.png',
+            'images/tc_title_2.png',
+            'images/tc_title_3.png',
+            'images/xxqr.png',
+            'images/yun_1.png',
+            'images/yun_2.png',
+            'images/yun_3.png',
+            'images/yun.png',
+            'images/yzm.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.home').show();
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--loading-->
+    <section class="loader disable">
+        <div>
+            <!-- <img src="./images/girl.gif" alt=""> -->
+        </div>
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!-- 首页 -->
+    <section id="home" class="home disable">
+        <div>
+            <a href="javascript:void(0)" class="rule-btn"></a>
+        </div>
+        <div></div>
+        <div>
+            <a id="start" href="javascript:void(0)"></a>
+        </div>
+
+        <!-- 测试按钮 -->
+        <a style="position:absolute;z-index:300;top:.5rem;" href="#" class="test2">没有关注公众号</a>
+        <a style="position:absolute;z-index:300;top:1rem;" href="#" class="test3">不是注册用户</a>
+        <a style="position:absolute;z-index:300;top:1.5rem;" href="#" class="test4">异网用户</a>
+        <a style="position:absolute;z-index:300;top:2rem;" href="#" class="test5">5个部位全部点亮</a>
+        <a style="position:absolute;z-index:300;top:2.5rem;" href="#" class="test6">兑换券送光了</a>
+
+    </section>
+    <!-- 活动规则页 -->
+    <section class="rule">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <h2>
+                    <span></span>
+                </h2>
+                <ul>
+                    <li>
+                        <h3>一 活动时间：</h3>
+                        <p>即日起——3月16日</p>
+                        <h3>二 活动介绍：</h3>
+                        <p>活动期间，用户通过北京移动微信公众号，可参与“龙抬头，好运来”活动。用户初始可以选择一个“好运龙”的部位去点亮，第一次点亮部位后获得流量奖励。用户通过分享，邀请好友为自己点亮“好运龙”其他部位。当龙头、龙角、龙身、龙爪、龙尾5个部位全部被点亮后，“好运龙”吐出宝珠，用户即可参与抽奖。</p>
+                        <p>北京移动用户抽中流量奖品后，自动充入关注绑定账户。</p>
+                        <p>非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                        <h3>三 奖品规则：</h3>
+                        <p>活动奖品包含：500MB、1GB、2GB、5.5GB全国流量及部分免费业务体验资格、优惠业务办理资格。</p>
+                        <p>（一）流量奖品</p>
+                        <p>1.流量档位包括500MB、1GB、2GB、5.5GB全国流量；</p>
+                        <p>2.奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期至本月月末；</p>
+                        <p>3.活动赠送套外国内流量，优先级低于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                        <p>4.处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                        <p>5.赠送流量每月仅可领取100次，超出上限不可领取。</p>
+                        <p>（二）其它奖品</p>
+                        <p>规则详见各奖品办理页面</p>
+                        <p>温馨提示：活动将于3月16日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                    </li>
+                </ul>
+            </div>
+            <a id="rule-back" href="javascript:void(0)"></a>
+        </div>
+    </section>
+    <!-- 兑换方法页 -->
+    <section class="way">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <h2>
+                    <span class="way-text"></span>
+                </h2>
+                <ul>
+                    <li>
+                        <h3>奖品：</h3>
+                        <p>叮当快药礼品兑换券</p>
+                        <h3>使用规则：</h3>
+                        <p>1、获奖用户需在2月22日元宵节活动结束前兑换电子优惠券，电子优惠券自领取后的7天内有效；</p>
+                        <p>2、获奖用户至叮当快药APP或者微信公众号通过手机号注册/登录，在“我的”→“优惠券”中兑换电子优惠券，同一用户ID、手机号、收件人、支付账户仅限参与一次;</p>
+                        <p>3、领取后可直接将商品券加入购物车，在结算时可用优惠券抵扣对应商品金额支付1分钱，单笔订单仅限使用一张，且不与其他优惠同享;</p>
+                        <p>4、在北京叮当快药配送范围内的用户可享受首单免费送到家服务，不在配送范围内的用户需支付相应邮费; 其他区域在叮当商城订单邮费自理（满79元免运费）；</p>
+                        <p>5、商品数量有限，领完为止，如发现恶意刷单等行为叮当快药将有权取消相关订单；</p>
+                        <p>6、在法律允许范围内本活动最终解释权归叮当快药所有；</p>
+                        <p>7、叮当快药客服电话: 95028。</p>
+                    </li>
+                </ul>
+            </div>
+            <a id="way-back" href="javascript:void(0)"></a>
+        </div>
+    </section>
+    <!-- 关注公众号页 -->
+    <section class="attention">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <p>亲爱的用户</p>
+                <p>二月二龙抬头活动</p>
+                <p>联通、电信的小伙伴统统可以参加啦！</p>
+                <p>扫码关注微信参加活动</p>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/erweima.png" alt="二维码">
+                </div>
+            </div>
+            <p>长按图片<i></i>识别图中二维码<i></i>关注公众号</p>
+        </div>
+    </section>
+    <!-- 主页 -->
+    <section id="main" class="main">
+        <div></div>
+        <div></div>
+        <div>
+            <a class="rule-btn" href="javascript:void(0)"></a>
+            <div class="user-info">
+                <p>
+                    <span class="user-name">用户名用户名用户名用户名用户名</span><span>的好运龙</span>
+                </p>
+            </div>
+            <div class="card">
+                <ul id="dragon">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <a id="game-btn" href="javascript:void(0)"></a>
+            <ul>
+                <li>龙头 X <span>0</span></li>
+                <li>龙角 X <span>0</span></li>
+                <li>龙身 X <span>1</span></li>
+                <li>龙爪 X <span>0</span></li>
+                <li>龙尾 X <span>0</span></li>
+            </ul>
+            <div class="list-wrap">
+                <h3>
+                    <span></span>
+                </h3>
+                <div id="ownPartBox">
+                    <!-- <p class="part">龙角</p>
+                    <p>2月2日</p> -->
+                    <a href="javascript: void(0)" id="look"></a>
+                </div>
+                <div>
+                    <ul>
+                        <li>昵称</li>
+                        <li>部位</li>
+                        <li>时间</li>
+                    </ul>
+                    <ul id="friendGiftList">
+                        <!-- <li>
+                            <span class="friend-name">这是一个小胖子</span>
+                            <span>龙头</span>
+                            <span>2月2日</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 绑定手机号页 -->
+    <section class="telephone">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <h3>
+                    <span></span>
+                </h3>
+                <p>尊敬的用户，您还没有绑定手机号码哦！<br>快来在下方完成您的绑定吧～</p>
+                <div>
+                    <i></i>
+                    <input type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+                </div>
+                <div>
+                    <i></i>
+                    <input type="text">
+                    <input id="codeBtn" type="button" value="获取验证码">
+                </div>
+            </div>
+            <a href="javascript: void(0)" class="submit"></a>
+        </div>
+    </section>
+    <!-- 分享浮层 -->
+    <section class="share disable">
+        <div>
+            <span></span>
+        </div>
+    </section>
+    <!-- 全部点亮弹窗 -->
+    <section class="model disable tc-0">
+        <a href="javascript: void(0)" class="close"></a>
+        <div id="guang"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <img class="fire" src="./images/fire.gif" alt="">
+            <span></span>
+        </div>
+        <a id="getBtn" href="javascript: void(0)"></a>
+    </section>
+    <!-- 首次弹窗 -->
+    <section class="model disable tc-1">
+        <div>
+            <div>
+                <p>龙抬头，送福气！</p>
+                <p>任意选择一个部位点亮，立即获得奖励</p>
+                <p>5个部位全部点亮后</p>
+                <p>还能抽取<span>5.5GB</span>全国流量哦~</p>
+                <ul id="partList">
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+                <i></i>
+            </div>
+        </div>
+        <a id="firstModelBtn" href="javascript:void(0)"></a>
+    </section>
+    <!-- 已选择弹窗 -->
+    <!-- <section class="model disable tc-2">
+        <div>
+            <h3></h3>
+            <div>
+                <p>您已选择了</p>
+                <p>好运龙的<span>龙头</span></p>
+                <p>点亮<span>龙头</span>即可抽取大奖</p>
+                <div>
+                    <div>
+                        <img src="./images/card_2.png" alt="">
+                    </div>
+                </div>
+                <p>快去点亮好运龙其他部位，集齐全龙，<br>最高可得<span>5.5GB</span>！</p>
+            </div>
+        </div>
+        <a href="./index.html"></a>
+    </section> -->
+    <!-- 第一次点击按钮得到奖励弹窗 -->
+    <section class="model disable tc-3">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <h3></h3>
+            <div>
+                <p>您已成功点亮<span class="part"></span></p>
+                <p>送您一个福气礼包</p>
+                <p>内含<span>100MB</span>和优惠福利</p>
+                <p>快去点亮记录中查看领取吧！</p>
+                <a href="javascript: void(0)"></a>
+                <p>别忘了点亮其他4个部位，还能<br>抽<span>5.5GB</span>哦！</p>
+            </div>
+        </div>
+        <a class="firstLight" href="javascript: void(0)"></a>
+    </section>
+    <!-- 发送好友弹窗 -->
+    <section class="model disable tc-4">
+        <div>
+            <div>
+                <p>您的好运龙</p>
+                <p>还没有全部点亮哦~</p>
+                <p>快来让好友帮忙，</p>
+                <p>获得大奖吧！</p>
+            </div>
+        </div>
+        <a href="javascript: void(0)" class="toFriendBtn"></a>
+    </section>
+    <!-- 本网获得流量弹窗 -->
+    <section class="model disable tc-5">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <h3></h3>
+            <div>
+                <p>恭喜您的号码</p>
+                <p class="tel">15910943650</p>
+                <p>获得<span>1GB</span>全国流量</p>
+                <p>流量将于15日内到账</p>
+                <p>有效期：本月月末（流量到账后，立即生效）<br>快去通知小伙伴吧~</p>
+                <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=cxbxl2018072#wechat_redirect"></a>
+            </div>
+        </div>
+        <a class="close" href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7858699aca01b75f&redirect_uri=http%3A%2F%2Fserviceimg.bmcc.com.cn%2Fweixin%2Fredirect%2FdispenseRequest.action&response_type=code&scope=snsapi_base&state=cxbxl2018072#wechat_redirect"></a>
+    </section>
+    <!-- 异网弹窗 流量 -->
+    <section class="model disable tc-6">
+        <div>
+            <h3></h3>
+            <div>
+                <p>恭喜您的号码</p>
+                <p class="tel">15910943650</p>
+                <p>获得<span>100MB</span>全国流量</p>
+                <p>流量将于15日内到账</p>
+                <p>有效期至本月月末<br>（流量到账后，立即生效）</p>
+            </div>
+        </div>
+        <a class="close" href="javascript: void(0)"></a><!-- 
+         --><a id="giveBtn" href="javascript: void(0)"></a>
+    </section>
+    <!-- 异网弹窗 输入手机号 -->
+    <section class="model disable tc-7">
+        <div>
+            <p>请输入好友北京移动手机号码</p>
+            <div>
+                <h3></h3>
+                <input id="inputTel" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            </div>
+            <p>流量仅在活动期间进行转赠</p>
+        </div>
+        <a id="giveBtn_2" href="javascript:void(0)"></a>
+    </section>
+    <!-- 异网弹窗 信息确认 -->
+    <section class="model disable tc-8">
+        <div>
+            <h3>
+                <span></span>
+            </h3>
+            <p>您是否将</p>
+            <p><span>100MB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p class="inputTel"></p>
+            <p>账户中</p>
+            <p>点击确认按钮后，信息将不可再改</p>
+        </div>
+        <a id="revise" href="javascript:void(0)"></a><!-- 
+         --><a id="giveBtn_3" href="javascript:void(0)"></a>
+    </section>
+    <!-- 异网弹窗 转赠成功 -->
+    <section class="model disable tc-9">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <h3></h3>
+            <div>
+                <p>您的已将</p>
+                <p><span>100MB</span>全国流量</p>
+                <p>转赠到手机号码</p>
+                <p class="inputTel"></p>
+                <p>账户中</p>
+                <p>流量将于15日内到账</p>
+                <p>有效期：本月月末（流量到账后，立即生效）<br>快去通知小伙伴吧~</p>
+                <a href="http://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW"></a>
+            </div>
+        </div>
+        <a class="close" href="http://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW"></a>
+    </section>
+    <!-- 异网弹窗 兑换券 -->
+    <section class="model disable tc-10">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <h3></h3>
+            <div>
+                <p>恭喜您的号码</p>
+                <p class="tel">15910943650</p>
+                <p>点亮了<span class="part"></span></p>
+                <p>获得一个<span>礼品兑换券</span></p>
+                <p>兑换码<span id="copy-target">xxxxxxxxxxxx</span></p>
+                <a data-clipboard-action="copy" data-clipboard-target="#copy-target" id="copy-btn" href="javascript: void(0)">复制兑换码</a>
+                <p>点击按钮即可复制兑换码</p>
+            </div>
+        </div>
+        <a id="lookWayBtn" href="javascript: void(0)"></a>
+    </section>
+    <!-- 异网弹窗 无兑换券送流量 -->
+    <section class="model disable tc-6-1">
+        <div>
+            <h3></h3>
+            <div>
+                <p>恭喜您的号码</p>
+                <p class="tel">15910943650</p>
+                <p>点亮了<span class="part"></span></p>
+                <p>获得<span>100MB</span>全国流量</p>
+                <p>流量将于15日内到账</p>
+                <p>有效期至本月月末<br>（流量到账后，立即生效）</p>
+            </div>
+        </div>
+        <a class="close-ncm" href="javascript: void(0)"></a><!-- 
+         --><a id="giveBtn-1" href="javascript: void(0)"></a>
+    </section>
+    <!-- 异网弹窗 无兑换券送输入手机号 -->
+    <section class="model disable tc-7-1">
+        <div>
+            <p>请输入好友北京移动手机号码</p>
+            <div>
+                <h3></h3>
+                <input id="inputTel-1" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            </div>
+            <p>流量仅在活动期间进行转赠</p>
+        </div>
+        <a id="giveBtn_2-1" href="javascript:void(0)"></a>
+    </section>
+    <!-- 异网弹窗 无兑换券送信息确认 -->
+    <section class="model disable tc-8-1">
+        <div>
+            <h3>
+                <span></span>
+            </h3>
+            <p>您是否将</p>
+            <p><span>100MB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p class="inputTel-1"></p>
+            <p>账户中</p>
+            <p>点击确认按钮后，信息将不可再改</p>
+        </div>
+        <a id="revise-1" href="javascript:void(0)"></a><!-- 
+         --><a id="giveBtn_3-1" href="javascript:void(0)"></a>
+    </section>
+    <!-- 异网弹窗 无兑换券送转赠成功 -->
+    <section class="model disable tc-9-1">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <h3></h3>
+            <div>
+                <p>您的已将</p>
+                <p><span>100MB</span>全国流量</p>
+                <p>转赠到手机号码</p>
+                <p class="inputTel"></p>
+                <p>账户中</p>
+                <p>流量将于15日内到账</p>
+                <p>有效期：本月月末（流量到账后，立即生效）<br>快去通知小伙伴吧~</p>
+                <a href="http://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW"></a>
+            </div>
+        </div>
+        <a class="close" href="javascript: void(0)"></a>
+    </section>
+    <!-- 首页后第一个引导弹窗 -->
+    <section class="model disable tc-11">
+        <div>
+            <h3></h3>
+            <div>
+                <h3>
+                    <span></span>
+                </h3>
+                <p>1.任意选择一个部位点亮，拿小福气礼包</p>
+                <p>2.邀好友点亮其他部位，一起参与享福气</p>
+                <p>3.点亮好运龙，给您送福珠，最高抽取5.5GB!</p>
+            </div>
+        </div>
+        <a href="javascript: void(0)" id="knowBtn"></a>
+    </section>
+    <!-- 提示绑定手机号码弹窗 -->
+    <section class="model disable tc-12">
+        <div>
+            <div>
+                <p>亲，请先提交手机号码，</p>
+                <p>方便我们给您派发奖品哦~</p>
+            </div>
+        </div>
+        <a href="javascript: void(0)" class="haode"></a>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask disable" id="mask"></section>
+</body>
+</html>
+<script src="js/clipboard.min.js"></script>
+<script src="js/index.js"></script>
+<!-- <script>
+    new QRCode(document.getElementById("qrcode"), "http://www.baidu.com");
+</script> -->

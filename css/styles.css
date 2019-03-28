@@ -1,0 +1,1533 @@
+html,
+body {
+  background-color: #b7ea9d;
+  height: 100%;
+  /* loading */
+  /* 首页 */
+  /* 活动规则页 */
+  /* 玩法锦囊页 */
+  /* 主页 */
+  /* 我的奖励花园页 */
+  /* 二维码页 */
+  /* 好友入口首页 */
+  /* 弹窗 */
+  /* 分享浮层 */
+  /* 遮罩层 */
+}
+html a,
+body a {
+  box-sizing: border-box;
+}
+html section.loader > div,
+body section.loader > div {
+  padding-top: 50%;
+}
+html section.loader > div:nth-child(1),
+body section.loader > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  font-style: italic;
+  color: #00733d;
+}
+html section.loader > div:nth-child(2),
+body section.loader > div:nth-child(2) {
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 0 auto;
+  width: 15em;
+  height: .5em;
+  background-color: #dbf3d2;
+  border-radius: .4em;
+}
+html section.loader > div:nth-child(2) div,
+body section.loader > div:nth-child(2) div {
+  width: 30%;
+  height: .24em;
+  border-radius: .4em;
+  background-color: #00733d;
+}
+html section.home,
+body section.home {
+  display: none;
+}
+html section.home > div,
+body section.home > div {
+  position: relative;
+  width: 7.5rem;
+}
+html section.home > div:nth-child(1),
+body section.home > div:nth-child(1) {
+  height: 4.14rem;
+  background: url(../images/top_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(1) a,
+body section.home > div:nth-child(1) a {
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+  width: 1.5rem;
+  height: .58rem;
+  background: url(../images/rule_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(2),
+body section.home > div:nth-child(2) {
+  height: 2.74rem;
+  background: url(../images/top_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(2) > div,
+body section.home > div:nth-child(2) > div {
+  position: absolute;
+  top: -0.3rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6.75rem;
+  height: 4.53rem;
+  background: url(../images/flower.png) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+html section.home > div:nth-child(3),
+body section.home > div:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5.06rem;
+  background: url(../images/bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(3) > a,
+body section.home > div:nth-child(3) > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.4rem;
+  margin: auto;
+  width: 3.86rem;
+  height: 1.58rem;
+  background: url(../images/start_btn.png) center no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.home > div:nth-child(3) > div,
+body section.home > div:nth-child(3) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .6rem;
+  margin: auto;
+  box-sizing: border-box;
+  width: 5.08rem;
+  height: .66rem;
+  border: 2px dashed #4d9830;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+html section.home > div:nth-child(3) > div > p,
+body section.home > div:nth-child(3) > div > p {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-size: .32rem;
+  line-height: .66rem;
+  color: #057841;
+}
+html section.home > div:nth-child(3) > div > p i,
+body section.home > div:nth-child(3) > div > p i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: .3rem;
+  width: 1.6rem;
+  font-style: normal;
+}
+html section.home > div:nth-child(3) > div > p span,
+body section.home > div:nth-child(3) > div > p span {
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  color: #fd1812;
+}
+html section.home > div:nth-child(3) > div > p span:nth-child(2),
+body section.home > div:nth-child(3) > div > p span:nth-child(2) {
+  width: 1em;
+}
+html section.home > div:nth-child(3) > p,
+body section.home > div:nth-child(3) > p {
+  position: absolute;
+  bottom: .2rem;
+  width: 100%;
+  font-size: .24rem;
+  text-align: center;
+  color: #ff0909;
+}
+html section.rule,
+body section.rule {
+  display: none;
+}
+html section.rule > div,
+body section.rule > div {
+  width: 7.5rem;
+}
+html section.rule > div:nth-child(1),
+body section.rule > div:nth-child(1) {
+  position: relative;
+  height: 6.88rem;
+  background: url(../images/con_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.rule > div:nth-child(1) > div,
+body section.rule > div:nth-child(1) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html section.rule > div:nth-child(1) > div:nth-child(1),
+body section.rule > div:nth-child(1) > div:nth-child(1) {
+  top: 4.14rem;
+  width: 6.75rem;
+  height: 4.53rem;
+  background: url(../images/flower.png) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2),
+body section.rule > div:nth-child(1) > div:nth-child(2) {
+  box-sizing: border-box;
+  top: 1.24rem;
+  padding-top: 1.48rem;
+  width: 5.45rem;
+  height: 8.08rem;
+  background: url(../images/rule_box.png) center no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) ul,
+body section.rule > div:nth-child(1) > div:nth-child(2) ul {
+  overflow: scroll;
+  margin: 0 auto;
+  width: 4.7rem;
+  height: 6.2rem;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) ul::-webkit-scrollbar,
+body section.rule > div:nth-child(1) > div:nth-child(2) ul::-webkit-scrollbar {
+  display: none;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) ul li,
+body section.rule > div:nth-child(1) > div:nth-child(2) ul li {
+  font-size: .24rem;
+  text-align: justify;
+  color: #00783f;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) ul li h3,
+body section.rule > div:nth-child(1) > div:nth-child(2) ul li h3 {
+  line-height: 2em;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) ul li p,
+body section.rule > div:nth-child(1) > div:nth-child(2) ul li p {
+  text-indent: 2em;
+  line-height: 1.6em;
+}
+html section.rule > div:nth-child(1) > div:nth-child(2) > a,
+body section.rule > div:nth-child(1) > div:nth-child(2) > a {
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.rule > div:nth-child(2),
+body section.rule > div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  height: 5.06rem;
+  background: url(../images/bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.method,
+body section.method {
+  display: none;
+  background-color: #abe48f;
+}
+html section.method > div,
+body section.method > div {
+  width: 7.5rem;
+}
+html section.method > div:nth-child(1),
+body section.method > div:nth-child(1) {
+  height: 5.2rem;
+  background: url(../images/method_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.method > div:nth-child(2),
+body section.method > div:nth-child(2) {
+  height: 6.1rem;
+  background: url(../images/method_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.method > div:nth-child(3),
+body section.method > div:nth-child(3) {
+  height: 4.8rem;
+  background: url(../images/method_bg_03.png) center no-repeat;
+  background-size: cover;
+}
+html section.method > div:nth-child(4),
+body section.method > div:nth-child(4) {
+  height: 5rem;
+  background: url(../images/method_bg_04.png) center no-repeat;
+  background-size: cover;
+}
+html section.method > div:nth-child(5),
+body section.method > div:nth-child(5) {
+  height: 4.32rem;
+  background: url(../images/method_bg_05.png) center no-repeat;
+  background-size: cover;
+}
+html section.method > a,
+body section.method > a {
+  position: fixed;
+  bottom: 1.26rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.main,
+body section.main {
+  display: none;
+}
+html section.main > div,
+body section.main > div {
+  position: relative;
+  width: 7.5rem;
+}
+html section.main > div:nth-child(1),
+body section.main > div:nth-child(1) {
+  height: 1.68rem;
+  background: url(../images/main_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(1) > a,
+body section.main > div:nth-child(1) > a {
+  position: absolute;
+  right: .2rem;
+}
+html section.main > div:nth-child(1) > a:nth-child(1),
+body section.main > div:nth-child(1) > a:nth-child(1) {
+  top: .2rem;
+  width: 1.5rem;
+  height: .58rem;
+  background: url(../images/rule_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(1) > a:nth-child(2),
+body section.main > div:nth-child(1) > a:nth-child(2) {
+  bottom: 0;
+  width: 1.86rem;
+  height: .55rem;
+  background: url(../images/btn_jn.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(1) div,
+body section.main > div:nth-child(1) div {
+  position: absolute;
+  top: 1.24rem;
+  left: .5rem;
+  display: flex;
+  align-items: center;
+  height: .3rem;
+}
+html section.main > div:nth-child(1) div a,
+body section.main > div:nth-child(1) div a {
+  margin-right: .18rem;
+  width: .62rem;
+  height: .3rem;
+  background: url(../images/mess_on.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(1) div a.off,
+body section.main > div:nth-child(1) div a.off {
+  background: url(../images/mess_off.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(1) div p,
+body section.main > div:nth-child(1) div p {
+  font-size: .24rem;
+  color: #2b6a48;
+}
+html section.main > div:nth-child(2),
+body section.main > div:nth-child(2) {
+  height: 4.58rem;
+  background: url(../images/main_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div,
+body section.main > div:nth-child(2) > div {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6.75rem;
+  height: 2.44rem;
+  background: url(../images/main_flower.png) center no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.main > div:nth-child(2) > div > div,
+body section.main > div:nth-child(2) > div > div {
+  position: absolute;
+  bottom: 1.9rem;
+}
+html section.main > div:nth-child(2) > div > div.cq,
+body section.main > div:nth-child(2) > div > div.cq {
+  left: 2.62rem;
+  width: 1.07rem;
+  height: 1.06rem;
+  background: url(../images/flower_fir.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.zq,
+body section.main > div:nth-child(2) > div > div.zq {
+  left: 2rem;
+  width: 2.51rem;
+  height: 1.85rem;
+  background: url(../images/flower_sec.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-1,
+body section.main > div:nth-child(2) > div > div.cs-1 {
+  left: 2.08rem;
+  width: 2.96rem;
+  height: 1.74rem;
+  background: url(../images/flower_end_1.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-2,
+body section.main > div:nth-child(2) > div > div.cs-2 {
+  left: 2.06rem;
+  width: 2.93rem;
+  height: 1.7rem;
+  background: url(../images/flower_end_2.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-3,
+body section.main > div:nth-child(2) > div > div.cs-3 {
+  left: 2.28rem;
+  width: 1.78rem;
+  height: 2.12rem;
+  background: url(../images/flower_end_3.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-4,
+body section.main > div:nth-child(2) > div > div.cs-4 {
+  left: 2.48rem;
+  width: 1.69rem;
+  height: 2.44rem;
+  background: url(../images/flower_end_4.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-5,
+body section.main > div:nth-child(2) > div > div.cs-5 {
+  left: 2.3rem;
+  width: 1.62rem;
+  height: 1.81rem;
+  background: url(../images/flower_end_5.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > div.cs-6,
+body section.main > div:nth-child(2) > div > div.cs-6 {
+  left: 2.9rem;
+  width: .65rem;
+  height: 2.39rem;
+  background: url(../images/flower_end_6.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > ul,
+body section.main > div:nth-child(2) > div > ul {
+  position: absolute;
+  width: 6.75rem;
+  height: 100%;
+}
+html section.main > div:nth-child(2) > div > ul > li,
+body section.main > div:nth-child(2) > div > ul > li {
+  position: absolute;
+}
+html section.main > div:nth-child(2) > div > ul > li:nth-child(1),
+body section.main > div:nth-child(2) > div > ul > li:nth-child(1) {
+  top: -1.6rem;
+  left: 1.6rem;
+  width: .71rem;
+  height: .71rem;
+  background: url(../images/sun.png) center no-repeat;
+  background-size: cover;
+  /* &.act{
+                                    left: 0;
+                                    right: 0;
+                                    top: -2rem;
+                                    margin: auto;
+                                } */
+}
+html section.main > div:nth-child(2) > div > ul > li:nth-child(2),
+body section.main > div:nth-child(2) > div > ul > li:nth-child(2) {
+  top: -1.6rem;
+  right: 1.6rem;
+  width: .76rem;
+  height: .5rem;
+  background: url(../images/shuihu.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > ul > li:nth-child(2).act,
+body section.main > div:nth-child(2) > div > ul > li:nth-child(2).act {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+html section.main > div:nth-child(2) > div > ul > li:nth-child(3),
+body section.main > div:nth-child(2) > div > ul > li:nth-child(3) {
+  top: -2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: .45rem;
+  height: .54rem;
+  background: url(../images/feiliao.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(2) > div > ul > li:last-child,
+body section.main > div:nth-child(2) > div > ul > li:last-child {
+  display: none;
+  top: -1.8rem;
+  right: 1.8rem;
+  width: .74rem;
+  height: .58rem;
+  background: url(../images/shou.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3),
+body section.main > div:nth-child(3) {
+  box-sizing: border-box;
+  padding-top: 1.4rem;
+  height: 3.74rem;
+  background: url(../images/main_bg_03.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul,
+body section.main > div:nth-child(3) > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto .2rem;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1),
+body section.main > div:nth-child(3) > ul:nth-child(1) {
+  width: 5.06rem;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li,
+body section.main > div:nth-child(3) > ul:nth-child(1) li {
+  position: relative;
+  width: 1.03rem;
+  height: 1.13rem;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li > span,
+body section.main > div:nth-child(3) > ul:nth-child(1) li > span {
+  display: none;
+  position: absolute;
+  top: .01rem;
+  right: -0.1rem;
+  width: .3rem;
+  height: .3rem;
+  border-radius: 50%;
+  font-size: .24rem;
+  text-align: center;
+  line-height: .3rem;
+  color: #ffffff;
+  background-color: #ff0000;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(1),
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(1) {
+  background: url(../images/yg.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(1).act,
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(1).act {
+  background: url(../images/yg_0.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(2),
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(2) {
+  background: url(../images/sh.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(2).act,
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(2).act {
+  background: url(../images/sh_0.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(3),
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(3) {
+  background: url(../images/fl.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(3).act,
+body section.main > div:nth-child(3) > ul:nth-child(1) li:nth-child(3).act {
+  background: url(../images/fl_0.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(2),
+body section.main > div:nth-child(3) > ul:nth-child(2) {
+  width: 6.1rem;
+}
+html section.main > div:nth-child(3) > ul:nth-child(2) li,
+body section.main > div:nth-child(3) > ul:nth-child(2) li {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+}
+html section.main > div:nth-child(3) > ul:nth-child(2) li:nth-child(1),
+body section.main > div:nth-child(3) > ul:nth-child(2) li:nth-child(1) {
+  color: #00733d;
+  background: url(../images/gift_btn.gif) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul:nth-child(2) li:nth-child(2),
+body section.main > div:nth-child(3) > ul:nth-child(2) li:nth-child(2) {
+  color: #7c3724;
+  border-radius: .5rem;
+  border: .05rem solid #ad5228;
+  background-color: #ffc78b;
+}
+html section.main > div:nth-child(4),
+body section.main > div:nth-child(4) {
+  padding: .2rem 0 .4rem;
+  background-color: #dbf3d2;
+}
+html section.main > div:nth-child(4) h3,
+body section.main > div:nth-child(4) h3 {
+  margin: 0 auto .3rem;
+  width: 2.63rem;
+  height: .31rem;
+  background: url(../images/title_hy.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(4) ul,
+body section.main > div:nth-child(4) ul {
+  overflow-y: scroll;
+  margin: 0 auto;
+  width: 6.5rem;
+  max-height: 5rem;
+}
+html section.main > div:nth-child(4) ul::-webkit-scrollbar,
+body section.main > div:nth-child(4) ul::-webkit-scrollbar {
+  display: none;
+}
+html section.main > div:nth-child(4) ul > p,
+body section.main > div:nth-child(4) ul > p {
+  width: 100%;
+  padding-top: .4rem;
+  font-size: .32rem;
+  text-align: center;
+  color: #999999;
+}
+html section.main > div:nth-child(4) ul li,
+body section.main > div:nth-child(4) ul li {
+  position: relative;
+  box-sizing: border-box;
+  padding: .05rem;
+  width: 6.5rem;
+  height: 1rem;
+  border-radius: .5rem;
+  background-color: #ffffff;
+}
+html section.main > div:nth-child(4) ul li:not(:last-child),
+body section.main > div:nth-child(4) ul li:not(:last-child) {
+  margin-bottom: .3rem;
+}
+html section.main > div:nth-child(4) ul li div,
+body section.main > div:nth-child(4) ul li div {
+  overflow: hidden;
+  width: .9rem;
+  height: .9rem;
+  border-radius: 50%;
+  background-color: #dedede;
+}
+html section.main > div:nth-child(4) ul li div img,
+body section.main > div:nth-child(4) ul li div img {
+  width: 100%;
+  height: 100%;
+}
+html section.main > div:nth-child(4) ul li p,
+body section.main > div:nth-child(4) ul li p {
+  position: absolute;
+  line-height: 1em;
+  font-size: .32rem;
+  color: #333333;
+}
+html section.main > div:nth-child(4) ul li p:nth-child(2),
+body section.main > div:nth-child(4) ul li p:nth-child(2) {
+  top: .2rem;
+  left: 1.14rem;
+}
+html section.main > div:nth-child(4) ul li p:nth-child(3),
+body section.main > div:nth-child(4) ul li p:nth-child(3) {
+  bottom: .16rem;
+  left: 1.14rem;
+  font-size: .24rem;
+  color: #999999;
+}
+html section.main > div:nth-child(4) ul li p:nth-child(4),
+body section.main > div:nth-child(4) ul li p:nth-child(4) {
+  top: 0;
+  right: .42rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+html section.gift,
+body section.gift {
+  display: none;
+}
+html section.gift > div,
+body section.gift > div {
+  width: 7.5rem;
+}
+html section.gift > div:nth-child(1),
+body section.gift > div:nth-child(1) {
+  position: relative;
+  height: 6.88rem;
+  background: url(../images/con_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(1) > div,
+body section.gift > div:nth-child(1) > div {
+  position: absolute;
+  top: .66rem;
+  width: 7.5rem;
+  z-index: 1;
+}
+html section.gift > div:nth-child(1) > div > div:nth-child(1),
+body section.gift > div:nth-child(1) > div > div:nth-child(1) {
+  margin: 0 0 .28rem 2.3rem;
+  width: 3.2rem;
+  height: 1.31rem;
+  background: url(../images/gift_title.png) center no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(1) > div ul,
+body section.gift > div:nth-child(1) > div ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 6.8rem;
+}
+html section.gift > div:nth-child(1) > div ul li,
+body section.gift > div:nth-child(1) > div ul li {
+  width: 1.55rem;
+}
+html section.gift > div:nth-child(1) > div ul li:not(:last-child),
+body section.gift > div:nth-child(1) > div ul li:not(:last-child) {
+  margin-right: .2rem;
+}
+html section.gift > div:nth-child(1) > div ul li:nth-child(1),
+body section.gift > div:nth-child(1) > div ul li:nth-child(1),
+html section.gift > div:nth-child(1) > div ul li:nth-child(2),
+body section.gift > div:nth-child(1) > div ul li:nth-child(2),
+html section.gift > div:nth-child(1) > div ul li :nth-child(3),
+body section.gift > div:nth-child(1) > div ul li :nth-child(3) {
+  margin-bottom: .2rem;
+}
+html section.gift > div:nth-child(1) > div ul li img,
+body section.gift > div:nth-child(1) > div ul li img {
+  display: block;
+  width: 1.55rem;
+  height: 1.84rem;
+}
+html section.gift > div:nth-child(1) > div ul li a,
+body section.gift > div:nth-child(1) > div ul li a {
+  margin: .1rem auto 0;
+  display: block;
+  width: 1.47rem;
+  height: .65rem;
+  background: url(../images/btn_nothing.png) center no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(1) > div ul li a.act,
+body section.gift > div:nth-child(1) > div ul li a.act {
+  background: url(../images/btn_look.png) center no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(1) > div > div:nth-child(3),
+body section.gift > div:nth-child(1) > div > div:nth-child(3) {
+  margin: .2rem auto;
+  width: 5.56rem;
+  height: 1.98rem;
+  background: url(../images/gift_list.png) center no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(1) > div > a,
+body section.gift > div:nth-child(1) > div > a {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.gift > div:nth-child(2),
+body section.gift > div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  height: 5.06rem;
+  background: url(../images/bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.code,
+body section.code {
+  display: none;
+}
+html section.code > div,
+body section.code > div {
+  width: 7.5rem;
+}
+html section.code > div:nth-child(1),
+body section.code > div:nth-child(1) {
+  position: relative;
+  height: 6.88rem;
+  background: url(../images/con_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.code > div:nth-child(1) > div,
+body section.code > div:nth-child(1) > div {
+  position: absolute;
+  top: 1.42rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.45rem;
+  z-index: 1;
+}
+html section.code > div:nth-child(1) > div > div,
+body section.code > div:nth-child(1) > div > div {
+  box-sizing: border-box;
+  width: 5.45rem;
+}
+html section.code > div:nth-child(1) > div > div:nth-child(1),
+body section.code > div:nth-child(1) > div > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.13rem;
+  background: url(../images/erweima_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.code > div:nth-child(1) > div > div:nth-child(1) p,
+body section.code > div:nth-child(1) > div > div:nth-child(1) p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #007742;
+}
+html section.code > div:nth-child(1) > div > div:nth-child(2),
+body section.code > div:nth-child(1) > div > div:nth-child(2) {
+  padding-top: .8rem;
+  height: 5.45rem;
+  background: url(../images/erweima_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.code > div:nth-child(1) > div > div:nth-child(2) > div,
+body section.code > div:nth-child(1) > div > div:nth-child(2) > div {
+  margin: 0 auto;
+  width: 2.88rem;
+  height: 2.88rem;
+  background-color: #b7ea9d;
+}
+html section.code > div:nth-child(1) > div > div:nth-child(2) > div img,
+body section.code > div:nth-child(1) > div > div:nth-child(2) > div img {
+  width: 100%;
+  height: 100%;
+}
+html section.code > div:nth-child(2),
+body section.code > div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  height: 5.06rem;
+  background: url(../images/bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home,
+body section.fri-home {
+  position: relative;
+  display: none;
+  height: 100%;
+}
+html section.fri-home > div,
+body section.fri-home > div {
+  position: relative;
+  width: 7.5rem;
+}
+html section.fri-home > div:nth-child(1),
+body section.fri-home > div:nth-child(1) {
+  height: 4.14rem;
+  background: url(../images/top_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home > div:nth-child(1) a,
+body section.fri-home > div:nth-child(1) a {
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+  width: 1.5rem;
+  height: .58rem;
+  background: url(../images/rule_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home > div:nth-child(2),
+body section.fri-home > div:nth-child(2) {
+  height: 2.74rem;
+  background: url(../images/top_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home > div:nth-child(2) > div,
+body section.fri-home > div:nth-child(2) > div {
+  box-sizing: border-box;
+  position: absolute;
+  top: -0.4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 1.1rem;
+  width: 5.45rem;
+  height: 4.66rem;
+  background: url(../images/fri_text_box.png) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+html section.fri-home > div:nth-child(2) > div p,
+body section.fri-home > div:nth-child(2) > div p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #007742;
+}
+html section.fri-home > div:nth-child(3),
+body section.fri-home > div:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5.06rem;
+  background: url(../images/bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home > div:nth-child(3) > a,
+body section.fri-home > div:nth-child(3) > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.4rem;
+  margin: auto;
+  width: 3.86rem;
+  height: 1.43rem;
+  background: url(../images/btn_fri.png) center no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.fri-home > div:nth-child(3) > div,
+body section.fri-home > div:nth-child(3) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .6rem;
+  margin: auto;
+  box-sizing: border-box;
+  width: 5.08rem;
+  height: .66rem;
+  border: 2px dashed #4d9830;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+html section.fri-home > div:nth-child(3) > div > p,
+body section.fri-home > div:nth-child(3) > div > p {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-size: .32rem;
+  line-height: .66rem;
+  color: #057841;
+}
+html section.fri-home > div:nth-child(3) > div > p i,
+body section.fri-home > div:nth-child(3) > div > p i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: .3rem;
+  width: 1.6rem;
+  font-style: normal;
+}
+html section.fri-home > div:nth-child(3) > div > p span,
+body section.fri-home > div:nth-child(3) > div > p span {
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  color: #fd1812;
+}
+html section.fri-home > div:nth-child(3) > div > p span:nth-child(2),
+body section.fri-home > div:nth-child(3) > div > p span:nth-child(2) {
+  width: 1em;
+}
+html section.fri-home > div:nth-child(3) > p,
+body section.fri-home > div:nth-child(3) > p {
+  position: absolute;
+  bottom: .2rem;
+  width: 100%;
+  font-size: .24rem;
+  text-align: center;
+  color: #ff0909;
+}
+html section.model,
+body section.model {
+  position: fixed;
+  top: 1.8rem;
+  width: 7.5rem;
+  z-index: 200;
+  /* 好友入口页弹窗 */
+  /* 发送好友弹窗 */
+  /* 开始 种子弹窗 */
+  /* 本网获赠流量弹窗 */
+  /* 异网流量弹窗 1 3*/
+  /* 异网流量弹窗 2 */
+  /* 异网流量弹窗 3 */
+  /* 异网流量弹窗 4 */
+  /* 不需要物料弹窗 */
+}
+html section.model.fri-tc,
+body section.model.fri-tc {
+  display: none;
+}
+html section.model.fri-tc > div,
+body section.model.fri-tc > div {
+  box-sizing: border-box;
+  padding-top: 1.1rem;
+  margin: 0 auto;
+  width: 5.45rem;
+  height: 4.87rem;
+  background: url(../images/fri_tc.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.fri-tc > div p,
+body section.model.fri-tc > div p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #00783f;
+}
+html section.model.fri-tc > div img,
+body section.model.fri-tc > div img {
+  display: block;
+  margin: .5rem auto;
+  width: 1.56rem;
+  height: 1.56rem;
+}
+html section.model.fri-tc > a,
+body section.model.fri-tc > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.message-model,
+body section.model.message-model {
+  display: none;
+}
+html section.model.message-model > div,
+body section.model.message-model > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .9rem;
+  width: 5.45rem;
+  height: 3.4rem;
+  background: url(../images/mess_tc.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.message-model > div p,
+body section.model.message-model > div p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #00783f;
+}
+html section.model.message-model > a,
+body section.model.message-model > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.tc-0,
+body section.model.tc-0 {
+  display: none;
+}
+html section.model.tc-0 > div,
+body section.model.tc-0 > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 5.45rem;
+  height: 7.44rem;
+  background: url(../images/tc_firbg.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > div p,
+body section.model.tc-0 > div p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #00783f;
+}
+html section.model.tc-0 > div div,
+body section.model.tc-0 > div div {
+  margin: .2rem auto .3rem;
+  width: 1.13rem;
+  height: .82rem;
+  background: url(../images/zhongzi.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > a,
+body section.model.tc-0 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.tc-1,
+body section.model.tc-1,
+html section.model.tc-5,
+body section.model.tc-5 {
+  display: none;
+}
+html section.model.tc-1 > div,
+body section.model.tc-1 > div,
+html section.model.tc-5 > div,
+body section.model.tc-5 > div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .8rem;
+  width: 5.45rem;
+  height: 6.73rem;
+  background: url(../images/tc_0_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div p,
+body section.model.tc-1 > div p,
+html section.model.tc-5 > div p,
+body section.model.tc-5 > div p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #00783f;
+}
+html section.model.tc-1 > div p:nth-child(2),
+body section.model.tc-1 > div p:nth-child(2),
+html section.model.tc-5 > div p:nth-child(2),
+body section.model.tc-5 > div p:nth-child(2) {
+  color: #a55320;
+}
+html section.model.tc-1 > div p:nth-child(3) span:last-child,
+body section.model.tc-1 > div p:nth-child(3) span:last-child,
+html section.model.tc-5 > div p:nth-child(3) span:last-child,
+body section.model.tc-5 > div p:nth-child(3) span:last-child {
+  color: #a55320;
+}
+html section.model.tc-1 > div img,
+body section.model.tc-1 > div img,
+html section.model.tc-5 > div img,
+body section.model.tc-5 > div img {
+  display: block;
+  margin: .1rem auto;
+  width: 1.56rem;
+  height: 1.56rem;
+}
+html section.model.tc-1 > div a,
+body section.model.tc-1 > div a,
+html section.model.tc-5 > div a,
+body section.model.tc-5 > div a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .22rem;
+  margin: auto;
+  width: 5rem;
+  height: 1.4rem;
+  background: url(../images/tc_banner.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > a,
+body section.model.tc-1 > a,
+html section.model.tc-5 > a,
+body section.model.tc-5 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.tc-2,
+body section.model.tc-2,
+html section.model.tc-4,
+body section.model.tc-4 {
+  display: none;
+}
+html section.model.tc-2 > div,
+body section.model.tc-2 > div,
+html section.model.tc-4 > div,
+body section.model.tc-4 > div {
+  margin: 0 auto;
+  width: 5.45rem;
+}
+html section.model.tc-2 > div:nth-child(1),
+body section.model.tc-2 > div:nth-child(1),
+html section.model.tc-4 > div:nth-child(1),
+body section.model.tc-4 > div:nth-child(1) {
+  box-sizing: border-box;
+  padding-top: .8rem;
+  height: 5.53rem;
+  background: url(../images/tc_2_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-2 > div:nth-child(1) p,
+body section.model.tc-2 > div:nth-child(1) p,
+html section.model.tc-4 > div:nth-child(1) p,
+body section.model.tc-4 > div:nth-child(1) p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 2em;
+  color: #00783f;
+}
+html section.model.tc-2 > div:nth-child(1) p:nth-child(2),
+body section.model.tc-2 > div:nth-child(1) p:nth-child(2),
+html section.model.tc-4 > div:nth-child(1) p:nth-child(2),
+body section.model.tc-4 > div:nth-child(1) p:nth-child(2) {
+  color: #a55320;
+}
+html section.model.tc-2 > div:nth-child(1) p:nth-child(3) span:last-child,
+body section.model.tc-2 > div:nth-child(1) p:nth-child(3) span:last-child,
+html section.model.tc-4 > div:nth-child(1) p:nth-child(3) span:last-child,
+body section.model.tc-4 > div:nth-child(1) p:nth-child(3) span:last-child {
+  color: #a55320;
+}
+html section.model.tc-2 > div:nth-child(1) img,
+body section.model.tc-2 > div:nth-child(1) img,
+html section.model.tc-4 > div:nth-child(1) img,
+body section.model.tc-4 > div:nth-child(1) img {
+  display: block;
+  margin: .1rem auto .2rem;
+  width: 1.56rem;
+  height: 1.56rem;
+}
+html section.model.tc-2 > div:nth-child(2),
+body section.model.tc-2 > div:nth-child(2),
+html section.model.tc-4 > div:nth-child(2),
+body section.model.tc-4 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html section.model.tc-2 > div:nth-child(2) > a,
+body section.model.tc-2 > div:nth-child(2) > a,
+html section.model.tc-4 > div:nth-child(2) > a,
+body section.model.tc-4 > div:nth-child(2) > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.tc-2 > div:nth-child(2) > a:nth-child(1),
+body section.model.tc-2 > div:nth-child(2) > a:nth-child(1),
+html section.model.tc-4 > div:nth-child(2) > a:nth-child(1),
+body section.model.tc-4 > div:nth-child(2) > a:nth-child(1) {
+  margin-right: .8rem;
+  color: #00783f;
+  border-color: #29783c;
+  background-color: #def4d0;
+}
+html section.model.tc-3,
+body section.model.tc-3 {
+  display: none;
+}
+html section.model.tc-3 > div,
+body section.model.tc-3 > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 5.45rem;
+  height: 3.4rem;
+  background: url(../images/mess_tc.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-3 > div p,
+body section.model.tc-3 > div p {
+  font-size: .24rem;
+  line-height: 1em;
+  text-align: center;
+  color: #00783f;
+}
+html section.model.tc-3 > div > div,
+body section.model.tc-3 > div > div {
+  margin: .4rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.model.tc-3 > div > div p,
+body section.model.tc-3 > div > div p {
+  margin-right: .26rem;
+}
+html section.model.tc-3 > div > div input,
+body section.model.tc-3 > div > div input {
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  width: 2.6rem;
+  height: .5rem;
+  font-size: .24rem;
+  line-height: .5rem;
+  border-radius: .5rem;
+  border: none;
+  background-color: #beeb98;
+}
+html section.model.tc-3 > a,
+body section.model.tc-3 > a {
+  margin: .5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: .8rem;
+  font-size: .32rem;
+  color: #7c3724;
+  border: 4px solid #ad5228;
+  border-radius: .5rem;
+  background-color: #ffc78b;
+}
+html section.model.tc-4 > div:nth-child(1),
+body section.model.tc-4 > div:nth-child(1) {
+  padding-top: 1rem;
+}
+html section.model.tc-4 > div:nth-child(1) p,
+body section.model.tc-4 > div:nth-child(1) p {
+  line-height: 2em;
+}
+html section.model.tc-4 > div:nth-child(1) p:nth-child(2),
+body section.model.tc-4 > div:nth-child(1) p:nth-child(2) {
+  color: #00783f;
+}
+html section.model.tc-4 > div:nth-child(1) p:nth-child(5),
+body section.model.tc-4 > div:nth-child(1) p:nth-child(5) {
+  color: #a55320;
+}
+html section.model.tc-4 > div:nth-child(1) p:nth-child(6),
+body section.model.tc-4 > div:nth-child(1) p:nth-child(6) {
+  margin-bottom: .4rem;
+}
+html section.model.tc-5 > div:nth-child(1) p:nth-child(2),
+body section.model.tc-5 > div:nth-child(1) p:nth-child(2) {
+  color: #00783f;
+}
+html section.model.tc-5 > div:nth-child(1) p:nth-child(2) span,
+body section.model.tc-5 > div:nth-child(1) p:nth-child(2) span {
+  color: #a55320;
+}
+html section.model.tc-5 > div:nth-child(1) p:nth-child(4),
+body section.model.tc-5 > div:nth-child(1) p:nth-child(4) {
+  color: #a55320;
+}
+html section.model.tc-5 > div:nth-child(1) p:nth-child(5),
+body section.model.tc-5 > div:nth-child(1) p:nth-child(5) {
+  margin-bottom: .2rem;
+}
+html section.model.tc-6 > div,
+body section.model.tc-6 > div {
+  padding-top: 1.5rem;
+}
+html section.model.tc-6 > div p,
+body section.model.tc-6 > div p {
+  font-size: .36rem;
+}
+html section.share,
+body section.share {
+  display: none;
+  padding-top: 0;
+  height: 100%;
+}
+html section.share > div,
+body section.share > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+html section.share > div span,
+body section.share > div span {
+  position: absolute;
+  top: .2rem;
+  right: .46rem;
+  width: 5.72rem;
+  height: 1.51rem;
+  background: url(../images/share.png) center no-repeat;
+  background-size: cover;
+}
+html section.mask,
+body section.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+@-webkit-keyframes tantiaodanchu {
+  0% {
+    transform: translateY(0);
+  }
+  20%,
+  60% {
+    transform: translateY(0.7rem);
+  }
+  40%,
+  80% {
+    transform: translateY(0.3rem);
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+    display: none;
+  }
+}
+@-moz-keyframes tantiaodanchu {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20%,
+  60% {
+    transform: translateY(0.7rem);
+  }
+  40%,
+  80% {
+    transform: translateY(0.3rem);
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+    display: none;
+  }
+}
+@-ms-keyframes tantiaodanchu {
+  0% {
+    transform: translateY(0);
+  }
+  20%,
+  60% {
+    transform: translateY(0.7rem);
+  }
+  40%,
+  80% {
+    transform: translateY(0.3rem);
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes tantiaodanchu {
+  0% {
+    transform: translateY(0);
+  }
+  20%,
+  60% {
+    transform: translateY(0.7rem);
+  }
+  40%,
+  80% {
+    transform: translateY(0.3rem);
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+    display: none;
+  }
+}

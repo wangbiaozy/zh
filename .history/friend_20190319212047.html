@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/bottom_bg.png',
+            'images/btn_fri.png',
+            'images/btn_jn.png',
+            'images/btn_look.png',
+            'images/btn_nothing.png',
+            'images/con_bg.png',
+            'images/default.jpg',
+            'images/erweima_bg_01.png',
+            'images/erweima_bg_02.png',
+            'images/erweima.jpg',
+            'images/feiliao.png',
+            'images/fl.png',
+            'images/flower_0.png',
+            'images/flower_1.png',
+            'images/flower_2.png',
+            'images/flower_3.png',
+            'images/flower_4.png',
+            'images/flower_5.png',
+            'images/flower_6.png',
+            'images/flower_end_1.png',
+            'images/flower_end_2.png',
+            'images/flower_end_3.png',
+            'images/flower_end_4.png',
+            'images/flower_end_5.png',
+            'images/flower_end_6.png',
+            'images/flower_fir.png',
+            'images/flower_sec.png',
+            'images/flower_tc_1.png',
+            'images/flower_tc_2.png',
+            'images/flower_tc_3.png',
+            'images/flower_tc_4.png',
+            'images/flower_tc_5.png',
+            'images/flower_tc_6.png',
+            'images/flower.png',
+            'images/fri_default.png',
+            'images/fri_fl.png',
+            'images/fri_sh.png',
+            'images/fri_tc.png',
+            'images/fri_text_box.png',
+            'images/fri_yg.png',
+            'images/gift_list.png',
+            'images/gift_title.png',
+            'images/main_bg_01.png',
+            'images/main_bg_02.png',
+            'images/main_bg_03.png',
+            'images/main_flower.png',
+            'images/mess_off.png',
+            'images/mess_on.png',
+            'images/mess_tc.png',
+            'images/method_bg_01.png',
+            'images/method_bg_02.png',
+            'images/method_bg_03.png',
+            'images/method_bg_04.png',
+            'images/method_bg_05.png',
+            'images/rule_box.png',
+            'images/rule_btn.png',
+            'images/sh.png',
+            'images/share.png',
+            'images/shou.png',
+            'images/shuihu.png',
+            'images/start_btn.png',
+            'images/sun.png',
+            'images/tc_0_bg.png',
+            'images/tc_2_bg.png',
+            'images/tc_banner.png',
+            'images/tc_firbg.png',
+            'images/title_hy.png',
+            'images/top_bg_01.png',
+            'images/top_bg_02.png',
+            'images/yg.png',
+            'images/zhongzi.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.fri-home').show();
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--loading-->
+    <section class="loader disable">
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!-- 首页 -->
+    <section class="fri-home">
+        <div>
+            <a href="javascript: void(0)" class="rule-btn"></a>
+        </div>
+        <div>
+            <div>
+                <p>您的好友<span>xx</span></p>
+                <p>邀请您为TA的花园增添能量</p>
+                <p>TA的花园才能种出美丽的花朵哦</p>
+                <p>当秘密花朵被收获时，有机会</p>
+                <p>抽中大奖哦！</p>
+                <p>快来参加吧～</p>
+            </div>
+        </div>
+        <div>
+            <a href="javascript: void(0)" id="start-btn"></a>
+            <div>
+                <p id="countDown"><i>倒计时：</i><span>7</span>天<span>00</span>时<span>00</span>分<span>00</span>秒</p>
+            </div>
+            <p>4月8日-4月14日&nbsp;&nbsp;&nbsp;&nbsp;活动将于4月14日结束，务必到期前领取</p>
+        </div>
+    </section>
+     <!-- 活动规则页 -->
+    <section id="rule" class="rule">
+        <div>
+            <div></div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>一 活动时间：</h3>
+                        <p>即日起——4月14日</p>
+                        <h3>二 活动介绍：</h3>
+                        <p>活动期间，用户通过北京移动微信公众号，可参与“天天种花得流量”活动。用户每天可获得一颗种子，通过添加物料（水、阳光、肥料），完成种植，收获花朵并获得对应流量奖品。</p>
+                        <p>获取物料方法：</p>
+                        <p>1、用户首次参与活动可领取水、阳光、肥料各1份。</p>
+                        <p>2、分享活动给好友，邀请其助力赠送，可获得更多物料。（好友助力次数不限，但为同一用户仅可助力一次。）</p>
+                        <h3>三 奖品规则：</h3>
+                        <p>活动奖品包含：100MB、200MB、500MB、1GB、2GB、3GB全国流量，及部分免费业务体验资格、优惠业务办理资格。</p>
+                        <p>（一）流量奖品</p>
+                        <p>1.流量档位包括100MB、200MB、500MB、1GB、2GB、3GB全国流量；</p>
+                        <p>2.奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期至本月月末；</p>
+                        <p>3.活动赠送套外国内流量，优先级低于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                        <p>4.处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                        <p>5.赠送流量每月仅可领取100次，超出上限不可领取；</p>
+                        <p>6.北京移动用户抽中流量奖品后，自动充入关注绑定账户。非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                        <p>（二）其它奖品</p>
+                        <p>规则详见各奖品办理页面</p>
+                        <p>温馨提示：</p>
+                        <p>1、活动将于4月14日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                        <p>2、活动页面内可手动关闭活动提醒。如不关闭，默认每天发放服务通知，提醒用户活动状态已更新。</p>
+                    </li>
+                </ul>
+                <a id="rule-back" href="javascript:void(0)">确定</a>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <!-- 为好友赠送工具弹窗 -->
+    <section class="model fri-tc">
+        <div>
+            <p>成功为好友<span id="userName">小胖子</span><br>增加了<span id="suppliesText"></span></p>
+            <img id="suppliesImg" src="" alt="">
+        </div>
+        <a href="./index.html">去种花</a>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+</html>
+<script src="js/friend.js"></script>

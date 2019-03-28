@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/banner.png',
+            'images/bdsjh.png',
+            'images/bg_01.png',
+            'images/bg_02.png',
+            'images/btn_cj.png',
+            'images/btn_cjhd.png',
+            'images/btn_dhff.png',
+            'images/btn_dl.png',
+            'images/btn_fshy.png',
+            'images/btn_lj.png',
+            'images/btn_qd.png',
+            'images/btn_qdl.png',
+            'images/btn_qr.png',
+            'images/btn_qx.png',
+            'images/btn_xg.png',
+            'images/btn_zz.png',
+            'images/c1.png',
+            'images/c2.png',
+            'images/c3.png',
+            'images/c4.png',
+            'images/c5.png',
+            'images/card_1.png',
+            'images/card_2.png',
+            'images/card_3.png',
+            'images/card_4.png',
+            'images/card_5.png',
+            'images/card.png',
+            'images/close.png',
+            'images/default.jpg',
+            'images/erweima.png',
+            'images/fire.gif',
+            'images/fri_bg_01.png',
+            'images/fri_bg_02.png',
+            'images/fri_bg_03.png',
+            'images/gongxi.png',
+            'images/guang1.png',
+            'images/guang2.png',
+            'images/hdgz.png',
+            'images/home_bg_01.png',
+            'images/home_bg_02.png',
+            'images/home_bg_03.png',
+            'images/hyzl.png',
+            'images/longjiao.png',
+            'images/longshen.png',
+            'images/longtou.png',
+            'images/longwei.png',
+            'images/longzhu.png',
+            'images/longzhua.png',
+            'images/rule_btn.png',
+            'images/share.png',
+            'images/sjhm.png',
+            'images/start_btn.png',
+            'images/submit.png',
+            'images/tc_1_text.png',
+            'images/tc_bg.png',
+            'images/tc_card.png',
+            'images/tc_title_1.png',
+            'images/tc_title_2.png',
+            'images/tc_title_3.png',
+            'images/xxqr.png',
+            'images/yun_1.png',
+            'images/yun_2.png',
+            'images/yun_3.png',
+            'images/yun.png',
+            'images/yzm.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.fri-home').show();
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--loading-->
+    <section class="loader disable">
+        <div>
+            <!-- <img src="./images/girl.gif" alt=""> -->
+        </div>
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!-- 首页 -->
+    <section class="fri-home disable">
+        <div></div>
+        <div>
+            <div>
+                <div>
+                    <p>您的好友<span class="user-name">名字名字名字名字名字名字</span></p>
+                    <p>正在参加龙抬头 好运来活动</p>
+                    <p>邀请您帮TA点亮好运龙</p>
+                    <p>当龙全部点亮后，可以抽取<span>5.5GB</span>哦～</p>
+                    <p>快来帮忙吧！</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a id="friendStartBtn" href="javascript:void(0)"></a>
+        </div>
+    </section>
+    <!-- 好友页点亮弹窗 -->
+    <section class="model tc-fri disable">
+        <div>
+            <div>
+                <p>成功为好友<span class="user-name">名字名字名字名字名字名字</span></p>
+                <p>点亮了<span class="friendPartText"></span></p>
+                <p>听说身边小伙伴都在玩</p>
+                <p>点亮就能获得好运福包</p>
+                <p>还能抽取5.5GB</p>
+                <div>
+                    <div>
+                        <img class="friendPartPic" src="./images/card_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./index.html"></a>
+    </section>
+    <!-- 关注公众号页 -->
+    <section class="attention">
+        <div></div>
+        <div></div>
+        <div>
+            <div>
+                <p>亲爱的用户</p>
+                <p>二月二龙抬头活动</p>
+                <p>联通、电信的小伙伴统统可以参加啦！</p>
+                <p>扫码关注微信参加活动</p>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/erweima.png" alt="二维码">
+                </div>
+            </div>
+            <p>长按图片<i></i>识别图中二维码<i></i>关注公众号</p>
+        </div>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask disable" id="mask"></section>
+</body>
+</html>
+<script src="js/friend.js"></script>

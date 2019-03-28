@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" href="css/styles.less">
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/less-1.7.0.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/bottom_bg.png',
+            'images/btn_fri.png',
+            'images/btn_jn.png',
+            'images/btn_look.png',
+            'images/btn_nothing.png',
+            'images/con_bg.png',
+            'images/default.jpg',
+            'images/erweima_bg_01.png',
+            'images/erweima_bg_02.png',
+            'images/erweima.jpg',
+            'images/feiliao.png',
+            'images/fl.png',
+            'images/flower_0.png',
+            'images/flower_1.png',
+            'images/flower_2.png',
+            'images/flower_3.png',
+            'images/flower_4.png',
+            'images/flower_5.png',
+            'images/flower_6.png',
+            'images/flower_end_1.png',
+            'images/flower_end_2.png',
+            'images/flower_end_3.png',
+            'images/flower_end_4.png',
+            'images/flower_end_5.png',
+            'images/flower_end_6.png',
+            'images/flower_fir.png',
+            'images/flower_sec.png',
+            'images/flower_tc_1.png',
+            'images/flower_tc_2.png',
+            'images/flower_tc_3.png',
+            'images/flower_tc_4.png',
+            'images/flower_tc_5.png',
+            'images/flower_tc_6.png',
+            'images/flower.png',
+            'images/fri_default.png',
+            'images/fri_fl.png',
+            'images/fri_sh.png',
+            'images/fri_tc.png',
+            'images/fri_text_box.png',
+            'images/fri_yg.png',
+            'images/gift_list.png',
+            'images/gift_title.png',
+            'images/main_bg_01.png',
+            'images/main_bg_02.png',
+            'images/main_bg_03.png',
+            'images/main_flower.png',
+            'images/mess_off.png',
+            'images/mess_on.png',
+            'images/mess_tc.png',
+            'images/method_bg_01.png',
+            'images/method_bg_02.png',
+            'images/method_bg_03.png',
+            'images/method_bg_04.png',
+            'images/method_bg_05.png',
+            'images/rule_box.png',
+            'images/rule_btn.png',
+            'images/sh.png',
+            'images/share.png',
+            'images/shou.png',
+            'images/shuihu.png',
+            'images/start_btn.png',
+            'images/sun.png',
+            'images/tc_0_bg.png',
+            'images/tc_2_bg.png',
+            'images/tc_banner.png',
+            'images/tc_firbg.png',
+            'images/title_hy.png',
+            'images/top_bg_01.png',
+            'images/top_bg_02.png',
+            'images/yg.png',
+            'images/zhongzi.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.home').show();
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--loading-->
+    <section class="loader">
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
+    <!-- 首页 -->
+    <section id="home" class="home">
+        <div>
+            <a href="javascript: void(0)" class="rule-btn"></a>
+        </div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <a href="javascript: void(0)" id="start-btn"></a>
+            <div>
+                <p id="countDown"><i>倒计时：</i><span>7</span>天<span>00</span>时<span>00</span>分<span>00</span>秒</p>
+            </div>
+            <p>4月8日-4月14日&nbsp;&nbsp;&nbsp;&nbsp;活动将于4月14日结束，务必到期前领取</p>
+        </div>
+    </section>
+    <!-- 活动规则页 -->
+    <section id="rule" class="rule">
+        <div>
+            <div></div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>一 活动时间：</h3>
+                        <p>即日起——4月14日</p>
+                        <h3>二 活动介绍：</h3>
+                        <p>活动期间，用户通过北京移动微信公众号，可参与“天天种花得流量”活动。用户每天可获得一颗种子，通过添加物料（水、阳光、肥料），完成种植，收获花朵并获得对应流量奖品。</p>
+                        <p>获取物料方法：</p>
+                        <p>1、用户首次参与活动可领取水、阳光、肥料各1份。</p>
+                        <p>2、分享活动给好友，邀请其助力赠送，可获得更多物料。（好友助力次数不限，但为同一用户仅可助力一次。）</p>
+                        <h3>三 奖品规则：</h3>
+                        <p>活动奖品包含：100MB、200MB、500MB、1GB、2GB、3GB全国流量，及部分免费业务体验资格、优惠业务办理资格。</p>
+                        <p>（一）流量奖品</p>
+                        <p>1.流量档位包括100MB、200MB、500MB、1GB、2GB、3GB全国流量；</p>
+                        <p>2.奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期至本月月末；</p>
+                        <p>3.活动赠送套外国内流量，优先级低于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                        <p>4.处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                        <p>5.赠送流量每月仅可领取100次，超出上限不可领取；</p>
+                        <p>6.北京移动用户抽中流量奖品后，自动充入关注绑定账户。非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                        <p>（二）其它奖品</p>
+                        <p>规则详见各奖品办理页面</p>
+                        <p>温馨提示：</p>
+                        <p>1、活动将于4月14日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                        <p>2、活动页面内可手动关闭活动提醒。如不关闭，默认每天发放服务通知，提醒用户活动状态已更新。</p>
+                    </li>
+                </ul>
+                <a class="rule-back" href="javascript:void(0)">确定</a>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <!-- 主页 -->
+    <section id="main" class="main">
+        <div>
+            <a href="javascript:void(0)" class="rule-btn"></a>
+            <a href="javascript:void(0)" class="method-btn"></a>
+            <div>
+                <a id="switch-btn" href="javascript:void(0)"></a>
+                <p>活动通知</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div id="flower"></div>
+                <ul>
+                    <li id="sunEffects" class="a-ring yg"></li>
+                    <li id="bottle" class="a-ring sh"></li>
+                    <li id="fertilizerEffects" class="a-ring fl"></li>
+                    <li id="hand" class="flash"></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li class="yg">
+                    <span class="count" id="ygCountText"></span>
+                </li>
+                <li class="sh">
+                    <span class="count" id="shCountText"></span>
+                </li>
+                <li class="fl">
+                    <span class="count" id="flCountText"></span>
+                </li>
+            </ul>
+            <ul>
+                <li id="toGiftPageBtn">奖励花园</li>
+                <li class="toFriendBtn">获取能量</li>
+            </ul>
+        </div>
+        <div>
+            <h3></h3>
+            <ul id="friendList">
+                <p>您还没有好友给您助力哦~</p>
+                <!-- <li>
+                    <div>
+                        <img src="./images/fri_default.png" alt="">
+                    </div>
+                    <p>胖子胖子胖子胖子</p>
+                    <p>帮忙增加了<span>肥料</span></p>
+                    <p>3月1日</p>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- 玩法锦囊页 -->
+    <section id="method" class="method">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <a id="methodPageBtn" href="javascript: void(0)">确定</a>
+    </section>
+    <!-- 我的奖励花园页 -->
+    <section id="gift" class="gift">
+        <div>
+            <div>
+                <div></div>
+                <ul id="giftList">
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                    <li>
+                        <img src="./images/flower_0.png" alt="">
+                        <a href="javascript: void(0)"></a>
+                    </li>
+                </ul>
+                <div></div>
+                <a id="gift-back" href="javascript: void(0)">返回</a>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <!-- 二维码页 -->
+    <section id="code" class="code">
+        <div>
+            <div>
+                <div>
+                    <p>亲爱的用户<br>天天种花得流量活动邀你参加<br>天天有惊喜哦~</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/erweima.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <!-- 添加物料弹窗 -->
+    <section class="model addModel message-model">
+        <div>
+            <p>您已成功为种子<br><span id="wl">添加了阳光</span><br>种子已进入<span id="jd"></span><br>快来看看吧</p>
+        </div>
+        <a id="jd-tc" href="javascript: void(0)">确定</a>
+    </section>
+    <!-- 发送好友弹窗 -->
+    <section class="model to-friend message-model">
+        <div>
+            <p>您需要积攒能量<br>才能种出神秘花朵<br>还有抽大奖的机会哦<br>快请好友帮忙吧</p>
+        </div>
+        <a class="toFriendBtn" href="javascript:void(0)">发送好友</a>
+    </section>
+    <!-- 开始 种子弹窗 -->
+    <section class="model tc-0">
+        <div>
+            <p>恭喜您已经播种了<br>一颗神秘种子<br>快去养育TA～</p>
+            <div></div>
+            <p>看看可以收获什么花吧！！</p>
+            <p id="giveText">送您阳光、水壶、肥料各一份</p>
+        </div>
+        <a id="goMain" href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 本网获得流量弹窗 -->
+    <section class="model tc-1">
+        <div>
+            <p>恭喜您的手机号</p>
+            <p>15910943650</p>
+            <p>收货了<span>雏菊</span>（价值<span>500MB</span>）</p>
+            <img src="./images/flower_tc_1.png" alt="">
+            <p>流量将于7日内到账</p>
+            <p>有效期至本月月末</p>
+            <a href=""></a>
+        </div>
+        <a href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 异网流量弹窗 1-->
+    <section class="model tc-2">
+        <div>
+            <p>恭喜您的手机号</p>
+            <p>13612341234</p>
+            <p>收获了<span>雏菊</span>（价值<span>500MB</span>）</p>
+            <img src="./images/flower_tc_1.png" alt="">
+            <p>您可以转赠到北京移动号码内</p>
+            <p>（流量仅可在活动期间内进行转赠）</p>
+        </div>
+        <div>
+            <a href="javascript:void(0)">取消</a>
+            <a href="javascript:void(0)">转赠</a>
+        </div>
+    </section>
+    <!-- 异网流量弹窗 2 -->
+    <section class="model tc-3">
+        <div>
+            <p>请输入好友北京移动手机号码</p>
+            <div>
+                <p>手机号码</p>
+                <input id="inputTel" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            </div>
+            <p>（流量仅可在活动期间进行转赠）</p>
+        </div>
+        <a href="javascript:void(0)">确定</a>
+    </section>
+     <!-- 异网流量弹窗 3 -->
+    <section class="model tc-4">
+        <div>
+            <p>信息确认</p>
+            <p>您是否将</p>
+            <p><span>500MB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p>13612341234</p>
+            <p>账户中</p>
+            <p>点击确认后信息将不可更改</p>
+        </div>
+        <div>
+            <a href="javascript:void(0)">修改</a>
+            <a href="javascript:void(0)">确认</a>
+        </div>
+    </section>
+    <!-- 异网流量弹窗 4 -->
+    <section class="model tc-5">
+        <div>
+            <p>您已将</p>
+            <p><span>500MB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p>15910011111</p>
+            <p>账户中</p>
+            <p>流量将于15日内到账</p>
+            <p>有效期至本月月末</p>
+            <p>（流量到账后，立即生效）</p>
+            <a href=""></a>
+        </div>
+        <a href="javascript:void(0)">确定</a>
+    </section>
+    <!-- 分享浮层 -->
+    <section class="share">
+        <div>
+            <span></span>
+        </div>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+</html>
+<script src="js/index.js"></script>
